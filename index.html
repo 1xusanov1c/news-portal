@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                toqkok: 'rgba(93, 95, 239, 1)',
+                oq: 'white'
+
+              },
+              width: {
+                '85': '85%' 
+              },
+              margin: {
+                '0': '0 auto'
+              },
+              fontFamily: {
+
+              }
+            }
+          }
+        }
+      </script>
+    <title>News Portal</title>
+</head>
+<body>
+  <nav class="bg-white shadow">
+      <div class="conatiner flex justify-between  w-85 m-0">
+          <div class="flex items-center gap-4   mt-[9px] p-2 ">
+              <p class="border border-none rounded py-[8px] px-[8px] text-toqkok hover:bg-toqkok hover:text-white ">News</p>
+              <p class="border border-none rounded py-[8px] px-[8px] text-toqkok hover:bg-toqkok hover:text-white ">Portal</p>
+          </div>
+          <div class="flex items-center gap-[35px]">
+              <ul class="flex items-center gap-[40px] text-gray-700">
+                <li class="hover:underline hover:text-toqkok ">News</li>
+                <li class="hover:underline hover:text-toqkok ">Blog</li>
+              </ul>
+              <img src="./images/Avatar.png" alt="">
+          </div>
+      </div>
+  </nav>
+
+    <header>
+      <div class="conatiner flex w-85 m-0">
+          <ul class="flex gap-[44px] list-none mt-[30px]">
+            <li><a href="#" class=" rounded-[5px]  hover:bg-sky-200 hover:text-toqkok px-[10px] py-[5px]">Home</a></li>
+            <li><a href="#" class=" rounded-[5px]  hover:bg-sky-200 hover:text-toqkok px-[10px] py-[5px]">Breaking news</a></li>
+            <li><a href="#" class=" rounded-[5px]  hover:bg-sky-200 hover:text-toqkok px-[10px] py-[5px]">Breaking news</a></li>
+            <li><a href="#" class=" rounded-[5px]  hover:bg-sky-200 hover:text-toqkok px-[10px] py-[5px]">International news</a></li>
+            <li><a href="#" class=" rounded-[5px]  hover:bg-sky-200 hover:text-toqkok px-[10px] py-[5px]">Sports</a></li>
+            <li><a href="#" class=" rounded-[5px]  hover:bg-sky-200 hover:text-toqkok px-[10px] py-[5px]">Entertainment</a></li>
+            <li><a href="#" class=" rounded-[5px]  hover:bg-sky-200 hover:text-toqkok px-[10px] py-[5px]">Culture</a></li>
+            <li><a href="#" class=" rounded-[5px]  hover:bg-sky-200 hover:text-toqkok px-[10px] py-[5px]">Arts</a></li>
+            <li><a href="#" class=" rounded-[5px]  hover:bg-sky-200 hover:text-toqkok px-[10px] py-[5px]">All news<a></a></li>
+        </ul>
+      </div>
+    </header>
+    
+
+    <div class="conatiner w-85 m-auto">
+      <div class=" rounded-[5px] items-center py-[21px] pl-[18px] mt-[40px] bg-slate-100">
+        <p>4 items found for category Entertainment</p>
+      </div>
+    </div>
+
+    <div class="conatiner w-85 m-auto">
+      <div class="flex justify-between mt-[40px]">
+        <div class="flex items-center space-x-2">
+          <label for="sort" class="text-black font-medium">Sort By View:</label>
+          <div class="relative">
+            <select id="sort" class="appearance-none bg-gray-100 border border-gray-300 text-gray-500 rounded px-4 py-2 pr-8 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+              <option value="default">Default</option>
+              <option value="ascending">Ascending</option>
+              <option value="descending">Descending</option>
+            </select>
+            <div class="absolute inset-y-0 right-0 flex items-center pr-2 pointer-events-none">
+              <svg class="w-4 h-4 text-gray-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 9l4-4 4 4m0 6l-4 4-4-4" />
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="text-toqkok ">
+        <button class=" border border-solid border-toqkok rounded-[5px] px-[19px] py-[10px] hover:bg-toqkok hover:text-white">Today's Pick</button>
+        <button class=" border border-solid border-toqkok rounded-[5px] px-[19px] py-[10px] hover:bg-toqkok hover:text-white">Trending</button>
+        </div>
+      </div>
+    </div>
+    
+
+    <main>
+      <div class="conatiner w-85 m-auto flex flex-row mt-[40px] rounded-[10px] px-[20px] py-[20px] shadow-md">
+        <img src="./images/1-rasm.png" alt="">
+        <div class="ml-">
+          <div class="ml-[40px]">
+             <h2 class="text-[24px] font-bold">The best fashion influencers to follow for sartorial inspiration</h2>
+            <p class="mt-[20px] text-gray-500 w-[857px]">From our favourite UK influencers to the best missives from Milan and the coolest New Yorkers, read on some of the best fashion blogs out there, and for even more inspiration, do head to our separate black fashion influencer round-up</p> 
+            <p class="mt-[30px] text-gray-500 w-[857px]">Fancy some shopping deals? Check out these amazing sales: Zara Black Friday, ASOS Black Friday, Missoma Black Friday and Gucci Black Friday...</p>
+          </div>
+            <div class="ml-[40px] mt-[20px]">
+              <div class="flex flex-row gap-[10px]">
+                <img src="./images/Rectangle 19.png" class="w-[50px] h-[50px] items-center" alt="Rectangle">
+                <div class="mr-[136px]">
+                  <p class="text-balck">Jane Cooper</p>
+                  <p class="text-gray-500">Jan 10, 2022 </p>
+                </div>
+                <div class=" flex items-center mr-[136px]">
+                  <img src="./images/carbon_view.png" alt="carbon_view">
+                  <p class="font-bold">1.5M</p>
+                </div>
+                <div class="flex flex-row items-center gap-[10px] mr-[135px]">
+                  <img src="./images/bxs_star-half.png" class="w-[26px] h-[26px]"  alt="bxs_star-half">
+                  <img src="./images/ant-design_star-outlined.png"  class="w-[26px] h-[26px]" alt="start">
+                  <img src="./images/ant-design_star-outlined.png"  class="w-[26px] h-[26px]" alt="start">
+                  <img src="./images/ant-design_star-outlined.png"  class="w-[26px] h-[26px]" alt="start">
+                  <img src="./images/ant-design_star-outlined.png"  class="w-[26px] h-[26px]" alt="start">
+                </div>
+                <div class="">
+                  <img src="./images/bi_arrow-right-short.png" alt="bi_arrow-right-short">
+                </div>
+              </div>
+              
+            </div>
+        </div>
+      </div>
+      <div class="conatiner w-85 m-auto flex flex-row mt-[40px] rounded-[10px] px-[20px] py-[20px] shadow-md">
+        <img src="./images/2-rasm.png" alt="">
+        <div class="ml-">
+          <div class="ml-[40px]">
+             <h2 class="text-[24px] font-bold">The best fashion influencers to follow for sartorial inspiration</h2>
+            <p class="mt-[20px] text-gray-500 w-[857px]">From our favourite UK influencers to the best missives from Milan and the coolest New Yorkers, read on some of the best fashion blogs out there, and for even more inspiration, do head to our separate black fashion influencer round-up</p> 
+            <p class="mt-[30px] text-gray-500 w-[857px]">Fancy some shopping deals? Check out these amazing sales: Zara Black Friday, ASOS Black Friday, Missoma Black Friday and Gucci Black Friday...</p>
+          </div>
+            <div class="ml-[40px] mt-[20px]">
+              <div class="flex flex-row gap-[10px]">
+                <img src="./images/Rectangle 19.png" class="w-[50px] h-[50px] items-center" alt="Rectangle">
+                <div class="mr-[136px]">
+                  <p class="text-balck">Jane Cooper</p>
+                  <p class="text-gray-500">Jan 10, 2022 </p>
+                </div>
+                <div class=" flex items-center mr-[136px]">
+                  <img src="./images/carbon_view.png" alt="carbon_view">
+                  <p class="font-bold">1.5M</p>
+                </div>
+                <div class="flex flex-row items-center gap-[10px] mr-[135px]">
+                  <img src="./images/bxs_star-half.png" class="w-[26px] h-[26px]"  alt="bxs_star-half">
+                  <img src="./images/ant-design_star-outlined.png"  class="w-[26px] h-[26px]" alt="start">
+                  <img src="./images/ant-design_star-outlined.png"  class="w-[26px] h-[26px]" alt="start">
+                  <img src="./images/ant-design_star-outlined.png"  class="w-[26px] h-[26px]" alt="start">
+                  <img src="./images/ant-design_star-outlined.png"  class="w-[26px] h-[26px]" alt="start">
+                </div>
+                <div class="">
+                  <img src="./images/bi_arrow-right-short.png" alt="bi_arrow-right-short">
+                </div>
+              </div>
+              
+            </div>
+        </div>
+      </div>
+      <div class="conatiner w-85 m-auto flex flex-row mt-[40px] rounded-[10px] px-[20px] py-[20px] shadow-md">
+        <img src="./images/3-rasm.png" alt="">
+        <div class="ml-">
+          <div class="ml-[40px]">
+             <h2 class="text-[24px] font-bold">The best fashion influencers to follow for sartorial inspiration</h2>
+            <p class="mt-[20px] text-gray-500 w-[857px]">From our favourite UK influencers to the best missives from Milan and the coolest New Yorkers, read on some of the best fashion blogs out there, and for even more inspiration, do head to our separate black fashion influencer round-up</p> 
+            <p class="mt-[30px] text-gray-500 w-[857px]">Fancy some shopping deals? Check out these amazing sales: Zara Black Friday, ASOS Black Friday, Missoma Black Friday and Gucci Black Friday...</p>
+          </div>
+            <div class="ml-[40px] mt-[20px]">
+              <div class="flex flex-row gap-[10px]">
+                <img src="./images/Rectangle 19.png" class="w-[50px] h-[50px] items-center" alt="Rectangle">
+                <div class="mr-[136px]">
+                  <p class="text-balck">Jane Cooper</p>
+                  <p class="text-gray-500">Jan 10, 2022 </p>
+                </div>
+                <div class=" flex items-center mr-[136px]">
+                  <img src="./images/carbon_view.png" alt="carbon_view">
+                  <p class="font-bold">1.5M</p>
+                </div>
+                <div class="flex flex-row items-center gap-[10px] mr-[135px]">
+                  <img src="./images/bxs_star-half.png" class="w-[26px] h-[26px]"  alt="bxs_star-half">
+                  <img src="./images/ant-design_star-outlined.png"  class="w-[26px] h-[26px]" alt="start">
+                  <img src="./images/ant-design_star-outlined.png"  class="w-[26px] h-[26px]" alt="start">
+                  <img src="./images/ant-design_star-outlined.png"  class="w-[26px] h-[26px]" alt="start">
+                  <img src="./images/ant-design_star-outlined.png"  class="w-[26px] h-[26px]" alt="start">
+                </div>
+                <div class="">
+                  <img src="./images/bi_arrow-right-short.png" alt="bi_arrow-right-short">
+                </div>
+              </div>
+              
+            </div>
+        </div>
+      </div>
+      <div class="conatiner w-85 m-auto flex flex-row mt-[40px] rounded-[10px] px-[20px] py-[20px] shadow-md">
+        <img src="./images/4-rasm.png" alt="">
+        <div class="ml-">
+          <div class="ml-[40px]">
+             <h2 class="text-[24px] font-bold">The best fashion influencers to follow for sartorial inspiration</h2>
+            <p class="mt-[20px] text-gray-500 w-[857px]">From our favourite UK influencers to the best missives from Milan and the coolest New Yorkers, read on some of the best fashion blogs out there, and for even more inspiration, do head to our separate black fashion influencer round-up</p> 
+            <p class="mt-[30px] text-gray-500 w-[857px]">Fancy some shopping deals? Check out these amazing sales: Zara Black Friday, ASOS Black Friday, Missoma Black Friday and Gucci Black Friday...</p>
+          </div>
+            <div class="ml-[40px] mt-[20px]">
+              <div class="flex flex-row gap-[10px]">
+                <img src="./images/Rectangle 19.png" class="w-[50px] h-[50px] items-center" alt="Rectangle">
+                <div class="mr-[136px]">
+                  <p class="text-balck">Jane Cooper</p>
+                  <p class="text-gray-500">Jan 10, 2022 </p>
+                </div>
+                <div class=" flex items-center mr-[136px]">
+                  <img src="./images/carbon_view.png" alt="carbon_view">
+                  <p class="font-bold">1.5M</p>
+                </div>
+                <div class="flex flex-row items-center gap-[10px] mr-[135px]">
+                  <img src="./images/bxs_star-half.png" class="w-[26px] h-[26px]"  alt="bxs_star-half">
+                  <img src="./images/ant-design_star-outlined.png"  class="w-[26px] h-[26px]" alt="start">
+                  <img src="./images/ant-design_star-outlined.png"  class="w-[26px] h-[26px]" alt="start">
+                  <img src="./images/ant-design_star-outlined.png"  class="w-[26px] h-[26px]" alt="start">
+                  <img src="./images/ant-design_star-outlined.png"  class="w-[26px] h-[26px]" alt="start">
+                </div>
+                <div class="">
+                  <img src="./images/bi_arrow-right-short.png" alt="bi_arrow-right-short">
+                </div>
+              </div>
+              
+            </div>
+        </div>
+      </div>
+    </main>
+
+
+    <footer class="bg-gray-100 text-center py-4 text-gray-500 text-sm mt-[85px]">
+      Copyright 2021 News Portal
+    </footer>
+</body>
+</html>
